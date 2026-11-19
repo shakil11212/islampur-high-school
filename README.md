@@ -1,1 +1,0 @@
-# islampur-high-school
