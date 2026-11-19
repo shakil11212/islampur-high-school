@@ -1,1 +1,154 @@
 
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ইসলামপুর উচ্চ বিদ্যালয়</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ line-height:1.7;
+ color:#203027;
+}
+header{
+ background:#14532d;
+ color:white;
+ padding:20px;
+ text-align:center;
+}
+nav{
+ background:#166534;
+ padding:12px;
+ text-align:center;
+}
+nav a{
+ color:white;
+ text-decoration:none;
+ margin:8px;
+}
+button{
+ padding:10px 16px;
+ background:#f4c95d;
+ border:0;
+ border-radius:6px;
+ cursor:pointer;
+}
+.hero{
+ background:linear-gradient(120deg,#14532d,#23834a);
+ color:white;
+ text-align:center;
+ padding:65px 15px;
+}
+.hero h1{font-size:34px}
+section{
+ padding:35px 20px;
+ max-width:950px;
+ margin:auto;
+}
+h2{color:#14532d}
+.card{
+ background:#f0f7f1;
+ padding:20px;
+ margin:12px 0;
+ border-radius:10px;
+}
+footer{
+ background:#0b2f1c;
+ color:white;
+ text-align:center;
+ padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2 style="color:white">ইসলামপুর উচ্চ বিদ্যালয়</h2>
+<p>Islampur High School</p>
+<p>নাঙ্গলকোট, কুমিল্লা, বাংলাদেশ</p>
+</header>
+
+<nav>
+<a href="#home" data-bn="হোম" data-en="Home">হোম</a>
+<a href="#about" data-bn="পরিচিতি" data-en="About">পরিচিতি</a>
+<a href="#education" data-bn="শিক্ষা" data-en="Education">শিক্ষা</a>
+<a href="#notice" data-bn="নোটিশ" data-en="Notice">নোটিশ</a>
+<a href="#contact" data-bn="যোগাযোগ" data-en="Contact">যোগাযোগ</a>
+<button onclick="changeLanguage()">English</button>
+</nav>
+
+<div class="hero" id="home">
+<h1 data-bn="ইসলামপুর উচ্চ বিদ্যালয়"
+data-en="Islampur High School">ইসলামপুর উচ্চ বিদ্যালয়</h1>
+<p data-bn="জ্ঞান, শৃঙ্খলা ও নৈতিক শিক্ষার মাধ্যমে সুন্দর ভবিষ্যৎ গড়ি।"
+data-en="Building a brighter future through knowledge, discipline and values.">
+জ্ঞান, শৃঙ্খলা ও নৈতিক শিক্ষার মাধ্যমে সুন্দর ভবিষ্যৎ গড়ি।
+</p>
+</div>
+
+<section id="about">
+<h2 data-bn="বিদ্যালয় পরিচিতি" data-en="About Our School">বিদ্যালয় পরিচিতি</h2>
+<div class="card">
+<p data-bn="ইসলামপুর উচ্চ বিদ্যালয় একটি বেসরকারি শিক্ষা প্রতিষ্ঠান। এখানে শিক্ষার্থীদের মানসম্মত শিক্ষা ও নৈতিক মূল্যবোধ গড়ে তোলার প্রত্যয় রয়েছে।"
+data-en="Islampur High School is a private educational institution committed to quality education and moral values.">
+ইসলামপুর উচ্চ বিদ্যালয় একটি বেসরকারি শিক্ষা প্রতিষ্ঠান। এখানে শিক্ষার্থীদের মানসম্মত শিক্ষা ও নৈতিক মূল্যবোধ গড়ে তোলার প্রত্যয় রয়েছে।
+</p>
+</div>
+
+<h2 data-bn="প্রধান শিক্ষক" data-en="Headteacher">প্রধান শিক্ষক</h2>
+<div class="card">
+<h3>শহীদুল্লাহ স্বপন</h3>
+<p>মোবাইল: <a href="tel:01891597069">০১৮৯১৫৯৭০৬৯</a></p>
+</div>
+</section>
+
+<section id="education">
+<h2 data-bn="শিক্ষা কার্যক্রম" data-en="Academic Activities">শিক্ষা কার্যক্রম</h2>
+<div class="card">শ্রেণিভিত্তিক পাঠদান</div>
+<div class="card">সহশিক্ষা কার্যক্রম</div>
+<div class="card">খেলাধুলা ও সাংস্কৃতিক অনুষ্ঠান</div>
+</section>
+
+<section id="notice">
+<h2 data-bn="নোটিশ বোর্ড" data-en="Notice Board">নোটিশ বোর্ড</h2>
+<div class="card">
+এখনো কোনো নোটিশ প্রকাশ করা হয়নি।
+</div>
+</section>
+
+<section id="contact">
+<h2 data-bn="যোগাযোগ" data-en="Contact Us">যোগাযোগ</h2>
+<p>ঠিকানা: ইসলামপুর, নাঙ্গলকোট, কুমিল্লা, বাংলাদেশ</p>
+<p>প্রধান শিক্ষক: শহীদুল্লাহ স্বপন</p>
+<p>মোবাইল: <a href="tel:01891597069">০১৮৯১৫৯৭০৬৯</a></p>
+</section>
+
+<footer>
+<p>© 2026 Islampur High School</p>
+<p>সর্বস্বত্ব সংরক্ষিত</p>
+</footer>
+
+<script>
+let english=false;
+
+function changeLanguage(){
+ english=!english;
+
+ document.querySelectorAll("[data-bn]").forEach(function(el){
+  el.textContent=english?el.dataset.en:el.dataset.bn;
+ });
+
+ document.querySelector("button").textContent=
+ english?"বাংলা":"English";
+
+ document.documentElement.lang=english?"en":"bn";
+}
+</script>
+
+</body>
+</html>
