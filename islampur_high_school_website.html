@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ইসলামপুর উচ্চ বিদ্যালয়ের পরিচিতিমূলক ওয়েবসাইট">
+  <title>ইসলামপুর উচ্চ বিদ্যালয় | Islampur High School</title>
+  <style>
+    :root{--navy:#12345a;--blue:#1769aa;--gold:#f4b942;--ink:#243247;--muted:#637083;--paper:#f5f8fc;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,"Noto Sans Bengali",sans-serif;color:var(--ink);line-height:1.65;background:var(--paper)}
+    header{background:linear-gradient(120deg,#12345a,#1769aa);color:white}
+    .top{max-width:1100px;margin:auto;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+    .brand{display:flex;align-items:center;gap:13px}.logo{width:55px;height:55px;border-radius:50%;background:white;color:var(--navy);display:grid;place-items:center;font-weight:bold;font-size:20px;border:3px solid var(--gold)}
+    h1{font-size:clamp(21px,4vw,32px);margin:0}.subtitle{margin:2px 0 0;opacity:.9;font-size:14px}
+    button{cursor:pointer;border:0;border-radius:8px;padding:10px 14px;font-weight:bold}
+    .lang{background:var(--gold);color:#172b43}
+    nav{background:#0d2948} nav .navinner{max-width:1100px;margin:auto;padding:0 18px;display:flex;gap:4px;flex-wrap:wrap}
+    nav a{color:white;text-decoration:none;padding:12px 10px;font-size:14px}nav a:hover{background:#21496f}
+    .hero{max-width:1100px;margin:auto;padding:55px 20px 65px;display:grid;grid-template-columns:1.5fr 1fr;gap:25px;align-items:center}
+    .hero h2{font-size:clamp(28px,5vw,44px);line-height:1.25;margin:0 0 12px}.hero p{font-size:17px;max-width:650px}
+    .hero-card{background:#ffffff18;border:1px solid #ffffff55;padding:22px;border-radius:14px}
+    .hero-card strong{display:block;color:#ffe0a0;font-size:20px;margin-bottom:6px}
+    .btn{display:inline-block;background:var(--gold);color:#172b43;text-decoration:none;padding:11px 17px;border-radius:8px;font-weight:bold;margin-top:8px}
+    main{max-width:1100px;margin:28px auto;padding:0 20px}
+    section{background:white;border-radius:13px;padding:25px;margin:20px 0;box-shadow:0 4px 18px #17395a0d}
+    section h2{color:var(--navy);margin:0 0 12px;border-bottom:2px solid #e7eef6;padding-bottom:9px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.tile{background:#f1f6fb;border-radius:10px;padding:17px}.tile h3{margin:0 0 6px;color:#174b78}
+    .notice{border-left:4px solid var(--gold);padding:10px 14px;background:#fff9eb;border-radius:5px;margin:10px 0}
+    .placeholder{color:var(--muted);font-style:italic}
+    footer{background:#0d2948;color:white;text-align:center;padding:25px 18px;margin-top:35px}
+    footer p{margin:5px}
+    @media(max-width:700px){.hero{grid-template-columns:1fr;padding:38px 20px}.grid{grid-template-columns:1fr}.top{align-items:flex-start}.logo{width:45px;height:45px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="brand">
+      <div class="logo" aria-label="School logo">ইউ</div>
+      <div>
+        <h1 id="schoolName">ইসলামপুর উচ্চ বিদ্যালয়</h1>
+        <p class="subtitle">Islampur High School</p>
+      </div>
+    </div>
+    <button class="lang" onclick="toggleLanguage()" id="langButton">English</button>
+  </div>
+  <nav><div class="navinner">
+    <a href="#home" data-bn="হোম" data-en="Home">হোম</a>
+    <a href="#about" data-bn="আমাদের সম্পর্কে" data-en="About">আমাদের সম্পর্কে</a>
+    <a href="#academics" data-bn="শিক্ষা কার্যক্রম" data-en="Academics">শিক্ষা কার্যক্রম</a>
+    <a href="#notices" data-bn="নোটিশ" data-en="Notices">নোটিশ</a>
+    <a href="#admission" data-bn="ভর্তি" data-en="Admission">ভর্তি</a>
+    <a href="#contact" data-bn="যোগাযোগ" data-en="Contact">যোগাযোগ</a>
+  </div></nav>
+  <div class="hero" id="home">
+    <div>
+      <h2 data-bn="জ্ঞান, শৃঙ্খলা ও সুন্দর ভবিষ্যতের পথে" data-en="A path to knowledge, discipline and a brighter future">জ্ঞান, শৃঙ্খলা ও সুন্দর ভবিষ্যতের পথে</h2>
+      <p data-bn="ইসলামপুর উচ্চ বিদ্যালয়ের ওয়েবসাইটে আপনাকে স্বাগতম। বিদ্যালয়ের খবর, শিক্ষা কার্যক্রম ও প্রয়োজনীয় তথ্য এখানে পাওয়া যাবে।" data-en="Welcome to the Islampur High School website. Find school news, academic information and useful updates here.">ইসলামপুর উচ্চ বিদ্যালয়ের ওয়েবসাইটে আপনাকে স্বাগতম। বিদ্যালয়ের খবর, শিক্ষা কার্যক্রম ও প্রয়োজনীয় তথ্য এখানে পাওয়া যাবে।</p>
+      <a class="btn" href="#about" data-bn="আরও জানুন" data-en="Learn more">আরও জানুন</a>
+    </div>
+    <div class="hero-card">
+      <strong data-bn="ইসলামপুর উচ্চ বিদ্যালয়" data-en="Islampur High School">ইসলামপুর উচ্চ বিদ্যালয়</strong>
+      <span data-bn="বেসরকারি শিক্ষা প্রতিষ্ঠান" data-en="Private educational institution">বেসরকারি শিক্ষা প্রতিষ্ঠান</span>
+      <p class="placeholder" data-bn="এখানে বিদ্যালয়ের ছবি যোগ করুন" data-en="Add a school photo here">এখানে বিদ্যালয়ের ছবি যোগ করুন</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="about">
+    <h2 data-bn="আমাদের সম্পর্কে" data-en="About Our School">আমাদের সম্পর্কে</h2>
+    <p data-bn="ইসলামপুর উচ্চ বিদ্যালয় একটি বেসরকারি শিক্ষা প্রতিষ্ঠান। বিদ্যালয়ের ইতিহাস, প্রতিষ্ঠার সাল, লক্ষ্য ও বিশেষ অর্জনের তথ্য এখানে যোগ করা হবে।" data-en="Islampur High School is a private educational institution. The school's history, founding year, mission and achievements can be added here.">ইসলামপুর উচ্চ বিদ্যালয় একটি বেসরকারি শিক্ষা প্রতিষ্ঠান। বিদ্যালয়ের ইতিহাস, প্রতিষ্ঠার সাল, লক্ষ্য ও বিশেষ অর্জনের তথ্য এখানে যোগ করা হবে।</p>
+    <p class="placeholder" data-bn="সম্পাদনা করুন: বিদ্যালয়ের ঠিকানা, প্রতিষ্ঠার সাল ও সংক্ষিপ্ত ইতিহাস বসান।" data-en="To edit: add the school's address, founding year and a short history.">সম্পাদনা করুন: বিদ্যালয়ের ঠিকানা, প্রতিষ্ঠার সাল ও সংক্ষিপ্ত ইতিহাস বসান।</p>
+  </section>
+
+  <section>
+    <h2 data-bn="প্রধান শিক্ষকের বাণী" data-en="Message from the Head Teacher">প্রধান শিক্ষকের বাণী</h2>
+    <p class="placeholder" data-bn="প্রধান শিক্ষকের অনুমোদিত বাণী ও নাম এখানে যোগ করুন।" data-en="Add an approved message and the head teacher's name here.">প্রধান শিক্ষকের অনুমোদিত বাণী ও নাম এখানে যোগ করুন।</p>
+  </section>
+
+  <section id="academics">
+    <h2 data-bn="শিক্ষা কার্যক্রম" data-en="Academic Information">শিক্ষা কার্যক্রম</h2>
+    <div class="grid">
+      <div class="tile"><h3 data-bn="শ্রেণি ও বিভাগ" data-en="Classes">শ্রেণি ও বিভাগ</h3><p class="placeholder" data-bn="বিদ্যালয়ে চালু শ্রেণিগুলোর তথ্য যোগ করুন।" data-en="Add the classes offered by the school.">বিদ্যালয়ে চালু শ্রেণিগুলোর তথ্য যোগ করুন।</p></div>
+      <div class="tile"><h3 data-bn="শিক্ষকবৃন্দ" data-en="Teachers">শিক্ষকবৃন্দ</h3><p class="placeholder" data-bn="অনুমতি নিয়ে শিক্ষকদের নাম ও পদবি যোগ করুন।" data-en="Add teachers' names and designations with permission.">অনুমতি নিয়ে শিক্ষকদের নাম ও পদবি যোগ করুন।</p></div>
+      <div class="tile"><h3 data-bn="রুটিন ও ফলাফল" data-en="Routine & Results">রুটিন ও ফলাফল</h3><p class="placeholder" data-bn="অনুমোদিত রুটিন ও ফলাফলের লিংক এখানে দিন।" data-en="Add links to approved routines and results here.">অনুমোদিত রুটিন ও ফলাফলের লিংক এখানে দিন।</p></div>
+    </div>
+  </section>
+
+  <section id="notices">
+    <h2 data-bn="সাম্প্রতিক নোটিশ" data-en="Latest Notices">সাম্প্রতিক নোটিশ</h2>
+    <div class="notice" data-bn="এখনো কোনো নোটিশ যোগ করা হয়নি। বিদ্যালয়ের অনুমোদিত নোটিশ এখানে প্রকাশ করুন।" data-en="No notices have been added yet. Publish approved school notices here.">এখনো কোনো নোটিশ যোগ করা হয়নি। বিদ্যালয়ের অনুমোদিত নোটিশ এখানে প্রকাশ করুন।</div>
+  </section>
+
+  <section id="admission">
+    <h2 data-bn="ভর্তি তথ্য" data-en="Admission Information">ভর্তি তথ্য</h2>
+    <p data-bn="ভর্তি সংক্রান্ত নিয়ম, প্রয়োজনীয় কাগজপত্র ও সময়সূচি বিদ্যালয় কর্তৃপক্ষের অনুমোদনের পর এখানে প্রকাশ করা হবে।" data-en="Admission rules, required documents and dates will be published here after approval by the school administration.">ভর্তি সংক্রান্ত নিয়ম, প্রয়োজনীয় কাগজপত্র ও সময়সূচি বিদ্যালয় কর্তৃপক্ষের অনুমোদনের পর এখানে প্রকাশ করা হবে।</p>
+  </section>
+
+  <section id="contact">
+    <h2 data-bn="যোগাযোগ" data-en="Contact Us">যোগাযোগ</h2>
+    <p><strong data-bn="ঠিকানা:" data-en="Address:">ঠিকানা:</strong> <span class="placeholder" data-bn="বিদ্যালয়ের পূর্ণ ঠিকানা যোগ করুন" data-en="Add the school's full address">বিদ্যালয়ের পূর্ণ ঠিকানা যোগ করুন</span></p>
+    <p><strong data-bn="ফোন:" data-en="Phone:">ফোন:</strong> <span class="placeholder" data-bn="অনুমোদিত বিদ্যালয় ফোন নম্বর যোগ করুন" data-en="Add the school's official phone number">অনুমোদিত বিদ্যালয় ফোন নম্বর যোগ করুন</span></p>
+    <p><strong>Email:</strong> <span class="placeholder">Add official school email</span></p>
+  </section>
+</main>
+<footer>
+  <p>© <span id="year"></span> Islampur High School</p>
+  <p data-bn="সর্বস্বত্ব বিদ্যালয় কর্তৃপক্ষ সংরক্ষিত।" data-en="All rights reserved by the school authority.">সর্বস্বত্ব বিদ্যালয় কর্তৃপক্ষ সংরক্ষিত।</p>
+</footer>
+<script>
+  let currentLanguage = "bn";
+  function toggleLanguage(){
+    currentLanguage = currentLanguage === "bn" ? "en" : "bn";
+    document.documentElement.lang = currentLanguage;
+    document.querySelectorAll("[data-bn][data-en]").forEach(el => {
+      el.textContent = el.getAttribute("data-" + currentLanguage);
+    });
+    document.getElementById("langButton").textContent = currentLanguage === "bn" ? "English" : "বাংলা";
+  }
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
